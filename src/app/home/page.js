@@ -10,7 +10,7 @@ const New = () => {
 
             {a.map((key) => {
                 setInterval(() => { }, 5000)
-                return <div className='bg-green-500 m-2 cursor-pointer' onClick={() => confirm('Is text ' + key * key)} key={key}>{key}</div>
+                return <div className='bg-green-500 m-2 cursor-pointer' onClick={() => confirm('Is ' + key * key + " prime?")} key={key}>{key}</div>
             })}
         </Suspense>
     </>
